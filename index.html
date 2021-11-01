@@ -3,8 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <link rel="stylesheet" href="styles_am20okt.css" />
+    <meta name="Homepage" content="width=device-width, initial-scale=1.0" />
+    <title>index - homepage</title>
+    <link rel="index" href="index.css" />
   </head>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Zen+Antique&display=swap" rel="stylesheet">    
+  </head>
+
   <body>
+
+    <nav id="navbar">
+        <ul>
+            <a class="home" href="C:\Users\Admin\Documents\GitHub\Kunskapskontroll-1\index.html"> <p>home</p> </a>
+            <a class="experience" href="C:\Users\Admin\Documents\GitHub\Kunskapskontroll-1\experience.html"> <p>experience</p> </a>
+            <a class="contact" href="C:\Users\Admin\Documents\GitHub\Kunskapskontroll-1\contact.html"> <p>contact</p> </a>
+        </ul>
+    </nav>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+  
+        body {
+          margin: 0;
+          display: grid;
+  
+          /* It's possible to assign "areas" to different elements of your HTML.
+          This is insanely powerful and flexible.
+          
+          1. Activate 'grid-template-areas' to build a general layout.
+          The layout here is three columns wide and three rows high.
+          Note how some elements span more than one "cell" within the grid */
+          grid-template-areas:
+            "header header aside"
+            ". . main main aside"
+            "footer footer footer";
+        }
+  
+        header,
+        main,
+        footer,
+        aside {
+          padding: 50px;
+        }
+  
+        header {
+          background: #ffffff;
+          /* grid-area: header; */
+        }
+  
+        main {
+          background: #ffffff;
+          /* grid-area: main; */
+        }
+  
+        footer {
+          background: #0000007c;
+          /* grid-area: footer; */
+        }
+  
+        aside {
+          background: #ffffff;
+          /* grid-area: aside; */
+        }
+  
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          height: 600px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          grid-template-rows: 3fr 3fr;
+          grid-gap: 25px;
+        }
+  
+        .child {
+          background: #0000007e;
+          color: white;
+          padding: 50px;
+          /* display: grid; */
+          justify-content: center;
+          align-items: center;
+        }
+      </style>
+    </head>
+    <body>
+      <header>Header area</header>
+      <main>
+        <p>Latest post</p>
+        <section class="container">
+          <div class="child" contenteditable>Column 1</div>
+          <div class="child" contenteditable>Column 2</div>
+          <div class="child" contenteditable>Column 3</div>
+          <div class="child" contenteditable>Column 4</div>
+          <div class="child" contenteditable>Column 5</div>
+          <div class="child" contenteditable>Column 6</div>
+        </section>
+      </main>
+      <aside>Aside area</aside>
+      <footer> Footer area </footer>
+    </body>
+  </html>
