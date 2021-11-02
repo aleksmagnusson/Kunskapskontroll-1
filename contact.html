@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="Homepage" content="width=device-width, initial-scale=1.0" />
-    <title>index - homepage</title>
-    <link rel="index" href="index.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
   </head>
 
   <body>
-
+<!--Navigationsfönster, topp (fast längst upp)-->
     <nav id="navbar">
         <ul>
             <a class="home" href="C:\Users\Admin\Documents\GitHub\Kunskapskontroll-1\index.html"> <p>home</p> </a>
@@ -23,4 +23,71 @@
         </ul>
     </nav>
 
-    
+<head>
+<body>
+  <main>
+    <section class="section-contact">
+      <div class="container">
+        <!--Huvudrubrik för sidan-->  
+        <h1>Contact</h1>
+          <!--Brödtext som informerar sidan-->
+          <p> Whether you have a great idea, story, concept or money to spend (on a great idea) get in touch with me! Together we create new possibilities! </p>
+
+          <!--Formulär flik-->
+          <form>
+            <!--Gruppering av formulär-->
+            <!--Hela namnet-->
+            <div class="form-group">
+              <label for="fullname">Full name *</label>
+              <input 
+                  type="text" 
+                  name="fullname"
+                  id="fullname"
+                  required class="form-element"
+                  
+                  placeholder="Jane Doe"/>
+            </div>
+            <!--E-mail adress-->
+            <div class="form-group">
+              <label for="email">E-mail adress *</label>
+              <input 
+                  type="text" 
+                  name="email"
+                  id="email"
+                  required class="form-element"
+                  
+                  placeholder="jane.doe@example.com"/></div>
+            <!-- Nummer / telefonnummer-->
+                  <div class="form-group">
+                    <label for="number">Phone number </label>
+                    <input 
+                        type="text" 
+                        name="number"
+                        id="number"
+                        
+                        placeholder="+44 123 456 789..."/></div>
+
+              <!--Fyll i ämnesrad-->
+            <div class="form-group">
+                <label for="subject">Enter subject </label>
+                <input 
+                    type="text" 
+                    name="subject"
+                    id="subject"
+                        
+                    placeholder="Making a contact page"/></div>
+              <!--Meddelande/message-->
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message" class="form-element" placeholder="Hello dear Jane Doe. My name is..." required class="form-element"></textarea>
+              </div>
+              <!--Skicka in / Sänd / submit knapp-->
+              <div class="submit-group">
+                <input type="submit" value="Send Massage" />
+              </div>
+
+          </form>
+      </div>
+    </section>
+  </main>
+</body>
+</head>

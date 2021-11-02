@@ -1,0 +1,29 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-contact {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-image: linear-gradient(170deg, #FFF 50%, #000 50%, rgb(0, 4, 36) );
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-left: 32px;
+        padding-right: 32px;
+
+        @media (min-width: 768px) {
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+    }
+}
+
