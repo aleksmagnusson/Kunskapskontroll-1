@@ -40,12 +40,18 @@
         margin-bottom: 20px;
     }
 
-    p {
+    h2 {
         color: black;
         font-size: 18px;
         text-align: center;
         line-height: 1.5;
         margin-bottom: 32px;
+    }
+
+    p {
+        color: black;
+        text-align: left;
+        margin-top: 18px;
     }
 
     form {
