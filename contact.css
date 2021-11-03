@@ -21,7 +21,9 @@
         padding-right: 32px;
     }
 
-/*    <style>
+/*
+    Ska inte vara med(!).
+    <style>
     @media screen {
         min-width: 1024px;
         padding-left: 128px;
@@ -41,6 +43,7 @@
     p {
         color: black;
         font-size: 18px;
+        text-align: center;
         line-height: 1.5;
         margin-bottom: 32px;
     }
@@ -53,16 +56,19 @@
         padding: 32px;
         border-radius: 16px;
         box-shadow: blue;
-
+    }
         /*
+        Behövs inte för denna sida, sidan är responsiv.
         @media screen (min-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
         }
         */
-    }
-    .form-group {
 
-        &.full {
+        /*
+        Behöver inte sätta in dessa i selektorer.
+        .form-group {
+
+        /*
             grid-column: 1 / -1;
         }
 
@@ -72,8 +78,8 @@
             color: #888;
             font-size: 14px;
         }
-    }
-
+        */
+    
     .form-element {
         appearance: none;
         outline: none;
@@ -94,19 +100,18 @@
     .submit-group {
         grid-column: 1 / -1;
         text-align: right;
-
+    }
         input [type="submit"] {
             appearance: none;
             border: none;
             outline: none;
-            background:
+            background: none;
 
             padding: 12px 16px;
-            background-color: #4494D6
+            background-color: #4494D6;
             border-radius: 10px
 
-
         }
-    }
 
-/* Tack för K
+/* Tack för att du kikat in på min contact-sida.
+/* Kod finns 
