@@ -7,7 +7,7 @@ ul {
 
 header {
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     align-content: center;
     justify-content: space-between;
     background-color: white;
@@ -16,4 +16,10 @@ header {
 
 .logo {
     
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-display: 0px;
 }
