@@ -1,25 +1,42 @@
-
 ul {
-    list-style-type: none;
-    margin-left: auto;
-    padding-left: 15px;
+  list-style-type: none;
+  margin-left: auto;
+  padding-left: 15px;
 }
 
 header {
-    display: flex;
-    font-size: 18px;
-    align-content: center;
-    justify-content: space-between;
-    background-color: white;
-    top: 0;
+  display: flex;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  background-color: white;
+  top: 0;
 }
 
 .logo {
-    
+  clip-path: url();
 }
 
 h1 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-display: 0px;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.circular--square {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+footer {
+  font-style: italic;
+  color: white;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
 }

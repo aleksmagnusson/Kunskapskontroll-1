@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="Homepage" content="width=device-width, initial-scale=1.0" />
     <title>index - homepage</title>
-    <link rel="index" href="index.css" />
-  </head>
-  <head>
+    <link rel="stylesheet" href="index.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Zen+Antique&display=swap" rel="stylesheet">    
@@ -17,9 +16,9 @@
 
     <nav id="navbar">
         <ul>
-            <a class="home" href="C:\Users\Admin\Documents\GitHub\Kunskapskontroll-1\index.html"> <p>home</p> </a>
-            <a class="experience" href="C:\Users\Admin\Documents\GitHub\Kunskapskontroll-1\experience.html"> <p>experience</p> </a>
-            <a class="contact" href="C:\Users\Admin\Documents\GitHub\Kunskapskontroll-1\contact.html"> <p>contact</p> </a>
+            <a class="home" href="index.html"> <p>home</p> </a>
+            <a class="experience" href="experience.html"> <p>experience</p> </a>
+            <a class="contact" href="contact.html"> <p>contact</p> </a>
         </ul>
     </nav>
 
@@ -48,7 +47,7 @@
         main,
         footer,
         aside {
-          padding: 150px;
+          padding: 75px;
         }
   
         header {
@@ -79,7 +78,7 @@
         .container {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-          height: 600px;
+          height: 500px;
           margin-left: auto;
           margin-right: auto;
           margin-top: 0px;
@@ -91,7 +90,7 @@
         .child {
           background: #0000007e;
           color: white;
-          padding: 50px;
+          padding: 25px;
           /* display: grid; */
           justify-content: center;
           align-items: center;
@@ -103,11 +102,19 @@
         <h1>
           Welcome to the homepage, take a look around!
         </h1>
-        <img src="https://pbs.twimg.com/profile_images/1344360664354197510/JoPNYmVW.jpg" alt="Aleks Magnusson (@AleksMagnusson)" style="width: 383px; height: 383px; margin: 0px;">
-
-
       </header>
-      <aside>Aside area</aside>
-      <footer> Footer area </footer>
+      <div>
+        <img class="circular--square" src="https://d1fdloi71mui9q.cloudfront.net/aN572T3Tn23VgOmB5p9f_N9Hqh577aQmiZXN0" alt="Aleks Magnusson (@AleksMagnusson)" />
+      </div>
+      <aside>
+        <iframe src="https://open.spotify.com/embed/track/2NnJpRXIlx35Vij3bPZO0h?theme=0" width="75%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">
+          <p>Daywalker! (feat.CORPSE) - Machine Gun Kelly, CORPSE</p>
+        </iframe>        
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wqZnO71PBis?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+      </aside>
+
+      <footer> Powered by VsCode, All copyrights reserved by © Aleks Magnusson, 2021 </footer>
     </body>
   </html>

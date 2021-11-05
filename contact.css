@@ -109,8 +109,8 @@
     }
         input [type="submit"] {
             appearance: none;
-            border: none;
-            outline: none;
+            border: white;
+            outline: black;
             background: none;
 
             padding: 12px 16px;
