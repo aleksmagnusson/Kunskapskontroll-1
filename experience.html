@@ -4,117 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index - homepage</title>
-    <link rel="index" href="index.css" />
-  </head>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Zen+Antique&display=swap" rel="stylesheet">    
+    <meta />
+    <title>Dark Light Agency</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
+    <div class="banner-area">
+      <header>
+        <a href="index.html" class="logo">DLA</a>
 
-    <nav id="navbar">
-      <ul>
-          <a class="home" href="index.html"> <p>home</p> </a>
-          <a class="experience" href="experience.html"> <p>experience</p> </a>
-          <a class="contact" href="contact.html"> <p>contact</p> </a>
-      </ul>
-  </nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        display: grid;
-
-        /* It's possible to assign "areas" to different elements of your HTML.
-        This is insanely powerful and flexible.
-        
-        1. Activate 'grid-template-areas' to build a general layout.
-        The layout here is three columns wide and three rows high.
-        Note how some elements span more than one "cell" within the grid */
-        grid-template-areas:
-          "header header aside"
-          ". . main main aside"
-          "footer footer footer";
-      }
-
-      header,
-      main,
-      footer,
-      aside {
-        padding: 50px;
-      }
-
-      header {
-        background: #ffffff;
-        /* grid-area: header; */
-      }
-
-      main {
-        background: #ffffff;
-        /* grid-area: main; */
-      }
-
-      footer {
-        background: #0000007c;
-        /* grid-area: footer; */
-      }
-
-      aside {
-        background: #ffffff;
-        /* grid-area: aside; */
-      }
-
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        grid-template-rows: 3fr 3fr;
-        grid-gap: 25px;
-      }
-
-      .child {
-        background: #0000007e;
-        color: white;
-        padding: 50px;
-        /* display: grid; */
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-  </head>
-  <body>
-    <header>Header area</header>
-    <main>
-      <p>Latest post</p>
-      <section class="container">
-        <div class="child" contenteditable>
-          <a href="https://images.pexels.com/photos/9424434/pexels-photo-9424434.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">High Fashion I</a>
-          <img src="https://images.pexels.com/photos/9424434/pexels-photo-9424434.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="High Fashion I">
-        </div>
-
-        <div class="child" contenteditable>Column 2</div>
-        
-        <div class="child" contenteditable>Column 3</div>
-        
-        <div class="child" contenteditable>Column 4</div>
-        
-        <div class="child" contenteditable>Column 5</div>
-        
-        <div class="child" contenteditable>Column 6</div>
-      </section>
-    </main>
-    <aside>Aside area</aside>
-    <footer> Footer area </footer>
-  </body>
-</html>
+      
