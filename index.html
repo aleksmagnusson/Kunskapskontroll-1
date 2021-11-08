@@ -4,117 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="Homepage" content="width=device-width, initial-scale=1.0" />
-    <title>index - homepage</title>
+    <title>Dark Light Agency</title>
     <link rel="stylesheet" href="index.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Zen+Antique&display=swap" rel="stylesheet">    
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-    <nav id="navbar">
-        <ul>
-            <a class="home" href="index.html"> <p>home</p> </a>
-            <a class="experience" href="experience.html"> <p>experience</p> </a>
-            <a class="contact" href="contact.html"> <p>contact</p> </a>
-        </ul>
-    </nav>
-
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-  
-        body {
-          margin: 0;
-          display: grid;
-  
-          /* It's possible to assign "areas" to different elements of your HTML.
-          This is insanely powerful and flexible.
-          
-          1. Activate 'grid-template-areas' to build a general layout.
-          The layout here is three columns wide and three rows high.
-          Note how some elements span more than one "cell" within the grid */
-          grid-template-areas:
-            "header header aside"
-            ". . main main aside"
-            "footer footer footer";
-        }
-  
-        header,
-        main,
-        footer,
-        aside {
-          padding: 75px;
-        }
-  
-        header {
-          background: #ffffff;
-          /* grid-area: header; */
-        }
-        .logo {
-          display: flex;
-          justify-content: center;
-
-        }
-        
-        main {
-          background: #ffffff;
-          /* grid-area: main; */
-        }
-  
-        footer {
-          background: #000000;
-          /* grid-area: footer; */
-        }
-  
-        aside {
-          background: #ffffff;
-          /* grid-area: aside; */
-        }
-  
-        .container {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          height: 500px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 0px;
-          margin-bottom: 0px;
-          grid-template-rows: 3fr 3fr;
-          grid-gap: 25px;
-        }
-  
-        .child {
-          background: #0000007e;
-          color: white;
-          padding: 25px;
-          /* display: grid; */
-          justify-content: center;
-          align-items: center;
-        }
-      </style>
-    </head>
-    <body>
+    <div class="banner-area">
+    
       <header>
-        <h1>
-          Welcome to the homepage, take a look around!
-        </h1>
+        <a href="#" class="logo">DLA</a>
+
+        <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>  
+        </ul>
+
       </header>
-      <div>
-        <img class="circular--square" src="https://d1fdloi71mui9q.cloudfront.net/aN572T3Tn23VgOmB5p9f_N9Hqh577aQmiZXN0" alt="Aleks Magnusson (@AleksMagnusson)" />
-      </div>
-      <aside>
-        <iframe src="https://open.spotify.com/embed/track/2NnJpRXIlx35Vij3bPZO0h?theme=0" width="75%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">
-          <p>Daywalker! (feat.CORPSE) - Machine Gun Kelly, CORPSE</p>
-        </iframe>        
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wqZnO71PBis?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      
+      <div class="banner-text">
+        <h2>Dark Light Agency</h2>
+        <p>Welcome to our site, look at the portfolio and feel free to contact us!</p>
+        <div> </div>
+        <a href="#">Experience</a>
+        <a href="#">Contact</a>
+        </div>
+    </div>
 
-        </iframe>
-      </aside>
 
-      <footer> Powered by VsCode, All copyrights reserved by © Aleks Magnusson, 2021 </footer>
+
     </body>
   </html>
