@@ -1,0 +1,104 @@
+
+    <nav id="navbar">
+        <ul>
+            <a class="home" href="index.html"> <p>home</p> </a>
+            <a class="experience" href="experience.html"> <p>experience</p> </a>
+            <a class="contact" href="contact.html"> <p>contact</p> </a>
+        </ul>
+    </nav>
+
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+  
+        body {
+          margin: 0;
+          display: grid;
+  
+          /* Det är möjligt att markera "ytor" till olika element i HTML.
+          Användbart och flexibelt att gå till väga.
+          
+          1. Skapa en 'grid-template-areas' för att bygga grunden för din layout.
+          Skriv dem som 3 kolumner i höjd och i bredd, som ett rutnät.
+          Notera hur vissa element span mer än andra med en "cell" innanför linjerna. */
+          
+          grid-template-areas:
+            "header header aside"
+            ". . main main aside"
+            "footer footer footer";
+        }
+  
+        header,
+        main,
+        footer,
+        aside {
+          padding: 75px;
+        }
+  
+        header {
+          background: #ffffff;
+          /* grid-area: header; */
+        }
+        .logo {
+          display: flex;
+          justify-content: center;
+
+        }
+        
+        main {
+          background: #ffffff;
+          /* grid-area: main; */
+        }
+  
+        footer {
+          background: #000000;
+          /* grid-area: footer; */
+        }
+  
+        aside {
+          background: #ffffff;
+          /* grid-area: aside; */
+        }
+  
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          height: 500px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          grid-template-rows: 3fr 3fr;
+          grid-gap: 25px;
+        }
+  
+        .child {
+          background: #0000007e;
+          color: white;
+          padding: 25px;
+          /* display: grid; */
+          justify-content: center;
+          align-items: center;
+        }
+
+        /* Spara för utkast.
+
+      </style>
+    </head>
+    <body>
+      
+      <div>
+        <img class="circular--square" src="https://d1fdloi71mui9q.cloudfront.net/aN572T3Tn23VgOmB5p9f_N9Hqh577aQmiZXN0" alt="Aleks Magnusson (@AleksMagnusson)" />
+      </div>
+      <aside>
+        <iframe src="https://open.spotify.com/embed/track/2NnJpRXIlx35Vij3bPZO0h?theme=0" width="75%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media">
+          <p>Daywalker! (feat.CORPSE) - Machine Gun Kelly, CORPSE</p>
+        </iframe>        
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wqZnO71PBis?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+        </iframe>
+      </aside>
+
+      <footer> Powered by VsCode, All copyrights reserved by © Aleks Magnusson, 2021 </footer>
+      */

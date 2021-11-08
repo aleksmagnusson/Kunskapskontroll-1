@@ -1,18 +1,17 @@
+
 .banner-area {
     /* Bakgrund */
+
     background-image: url(https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
     background-blend-mode: darken 5%;
-  
+
     /* mått */
     min-height: 100vh;
   }
   
-  body {
-    margin: 0;
-    padding: 0;
   }
   header {
     padding: 15 px 60px;
@@ -61,4 +60,26 @@
   }
 
   /* Grid och innehåll */
-  
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  padding: 5px;
+}
+
+img:hover {
+  cursor: pointer;
+  opacity: 0.75;
+  transition: 1s;
+}
+
