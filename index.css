@@ -1,13 +1,13 @@
 .banner-area {
   /* Bakgrund */
-  background-image:url(https://images.pexels.com/photos/2341282/pexels-photo-2341282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(https://images.pexels.com/photos/2341282/pexels-photo-2341282.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
   background-blend-mode: darken 5%;
 
-/* mått */
-height: 100vh;
+  /* mått */
+  min-height: 100vh;
 }
 
 body {
@@ -27,19 +27,18 @@ header {
 }
 .menu li {
   width: 100px;
-  height: 50px; 
+  height: 50px;
   line-height: 50px;
   text-align: center;
   color: #fff;
   font-size: 21px;
   float: left;
-  
 }
 
-.menu li:hover{
-  background:yellow;
+.menu li:hover {
+  background: yellow;
 }
-.menu li:hover a{
+.menu li:hover a {
   color: #000;
 }
 
@@ -47,7 +46,7 @@ header {
   text-decoration: none;
   font-family: anton;
   color: #fff;
-  transition: .9s;
+  transition: 0.9s;
   text-transform: uppercase;
 }
 
@@ -80,31 +79,28 @@ header {
 .banner-text p {
   font-size: 25px;
   margin: 0;
-
 }
 
 .banner-text a {
-text-decoration: none;
-border: 1.5px solid gold;
-font-size: 20px;
-padding: 10px 35px;
-color: #fff;
-display: inline-block;
-margin-top: 5%;
-font-family: anton;
-text-transform: uppercase;
+  text-decoration: none;
+  border: 1.5px solid gold;
+  font-size: 20px;
+  padding: 10px 35px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 5%;
+  font-family: anton;
+  text-transform: uppercase;
 }
 
 .banner-text a:hover {
   border-color: yellow;
   background: yellow;
-  transition: .9s;
+  transition: 0.9s;
   color: #262626;
 }
 
 /* Responsiv del*/
 
 @media all and (max-width: 769px) {
-
 }
- 
