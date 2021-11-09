@@ -1,7 +1,7 @@
 /* Header och logotyp */
 .banner-area {
   /* Bakgrund */
-  background-image: url(https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: url(https://images.pexels.com/photos/10138624/pexels-photo-10138624.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -60,5 +60,37 @@ header {
   width: 20%;
   float: left;
 }
+
+.banner-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+}
+
+.banner-text h2 {
+  font-size: 50px;
+  font-family: staatliches;
+}
+
+.banner-text p {
+  font-size: 26px;
+  margin: 0;
+}
+
+.banner-text a {
+  text-decoration: none;
+  border: 1.5px solid gold;
+  font-size: 20px;
+  padding: 10px 35px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 5%;
+  font-family: anton;
+  text-transform: uppercase;
+}
+
 /* Grid och innehåll */
 
